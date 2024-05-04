@@ -7,7 +7,7 @@
 /* Spacing inside the element */
 
 * {
-  font-family: RobotoMono Nerd Font;
+  font-family: JetBrainsMono Nerd Font, FontAwesome;
   font-size: 16px;
   font-weight: normal;
 }
@@ -17,7 +17,7 @@ window#waybar {
   color: @bg0;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 15px 15px;
   transition-duration: .5s;
 }
 
@@ -45,6 +45,10 @@ window#waybar {
 
 #workspaces {
   padding: 0px;
+}
+
+#workspaces button {
+  color: @fg;
 }
 
 #workspaces button.active {
