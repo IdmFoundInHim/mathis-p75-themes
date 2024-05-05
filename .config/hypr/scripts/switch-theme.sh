@@ -5,6 +5,7 @@ THEME_CONFIG="~/.config/hypr/themes/$1/$1.json"
 GTK_THEME=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".gtkTheme")
 KVANTUM_THEME=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".kvantumTheme")
 COLOR_SCHEME=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".colorScheme")
+WALLPAPER=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".wallpaper")
 ICON_THEME=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".iconTheme")
 FONT=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".font")
 NVIM_THEME=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".nvimTheme")
@@ -16,7 +17,7 @@ DARK_READER_TEXT_COLOR=$(cat ~/.config/hypr/themes/$1/$1.json | jq -r ".darkRead
 
 # wallpaper
 killall hyprpaper
-hyprpaper -c ~/.config/hypr/hyprpaper/$COLOR_SCHEME.conf &
+hyprpaper -c ~/.config/hypr/hyprpaper/$WALLPAPER.conf &
 
 # Change Waybar output depending on monitor
 source ~/.config/hypr/scripts/detect-outputs.sh
