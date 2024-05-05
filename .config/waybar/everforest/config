@@ -6,11 +6,11 @@
   "height": 60, 
   "layer": "top",
   "position": "top",
-  "output": "eDP-1",
+  "output": "",
   "spacing": 15,
   "modules-left": ["custom/launcher", "clock", "clock#date"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio", "network", "battery", "custom/powermenu"],
+  "modules-right": ["pulseaudio", "battery", "custom/powermenu"],
 
   "hyprland/workspaces": {
       "disable-scroll": true,
@@ -90,7 +90,7 @@
 },
 
 "battery": {
-    "bat": "BAT0",
+    "bat": "BAT1",
     "adapter": "ADP0",
     "interval": 60,
     "states": {
@@ -113,7 +113,7 @@
 },
 
 "clock#date": {
-  "format": " {:%A, %B %d, %Y}"
+  "format": " {:%A, %d %B %Y}"
 },
 
 "custom/powermenu": {
